@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Andrew Fulco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --green: #26573a;
+        }
+        .navbar {
+            background-color: var(--green) !important;
+            padding: 1rem 2rem;
+        }
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 15px;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #c0d6c0 !important;
+        }
+        .portfolio-hero {
+            background-color: var(--green);
+            color: white;
+            padding: 120px 0 80px;
+        }
+        .hero-title {
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+        }
+        .section-title {
+            color: var(--green);
+            font-weight: 700;
+        }
+        footer {
+            background-color: var(--green);
+            color: white;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR (same as all other pages) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">SKILLS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="navbar-brand text-white fw-bold fs-4">ANDREW FULCO</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="portfolio-hero mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="hero-title">My Portfolio</h1>
+                    <p class="fs-3 mt-4">Featured Projects from IS 436 and Beyond</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <div class="container my-5 py-5">
+        <div class="row g-5">
+
+            <!-- Project 1: Stock Market Analysis -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body p-5">
+                        <h4 class="section-title">Stock Market Company Analysis Project</h4>
+                        <p class="text-muted">Fall 2025 Semester</p>
+                        <p class="mt-3">Conducted an in-depth financial analysis of Gilead Sciences, Inc. (GILD). Gathered data from UMBC Library databases, compared stock performance, key financial ratios, and growth metrics against the S&P 500 to evaluate short- and long-term investment viability.</p>
+                        <ul class="mt-4">
+                            <li>Financial ratio analysis</li>
+                            <li>Comparative stock evaluation</li>
+                            <li>Data-driven investment insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: AI Ethics Presentation -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body p-5">
+                        <h4 class="section-title">AI Ethics in the Modern Workplace</h4>
+                        <p class="text-muted">Spring 2025 Semester</p>
+                        <p class="mt-3">Led a team of seven classmates in an ethical debate presentation focused on AI applications in customer service and hiring practices. Analyzed the Tesla Cybercab as a case study, covering technical design, economic impact, legal challenges, public perception, environmental effects, and adoption outlook.</p>
+                        <p class="mt-3"><strong>Role:</strong> Team Moderator &amp; Presenter</p>
+                        <a href="Presentation_IS_Ethics (1).pptx" class="btn btn-primary mt-3" download>
+                            📊 Download Full Presentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="lead">These projects demonstrate my ability to analyze complex data, lead teams, and communicate technical concepts clearly — skills I continue to develop in IS 436.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Andrew Fulco • IS 436 Portfolio • All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
